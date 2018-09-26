@@ -1,2 +1,2 @@
-include ':app', ':mobile'
+include ':app'//, ':mobile'
 

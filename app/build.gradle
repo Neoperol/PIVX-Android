@@ -135,9 +135,20 @@ dependencies {
     compile 'com.snappydb:snappydb-lib:0.5.2'
     compile 'ch.acra:acra:4.9.2'
     //compile 'com.bugsee:bugsee-android:+'
-    compile project(':mobile')
-    testCompile project(':mobile')
+    compile files('libs/mobile.jar')
+    compile files("libs/zerocoinj-1.0-SNAPSHOT.jar")
+    compile files('libs/pivxj-core-0.14.3-12.1.jar')
+    compile files('libs/furszy-non-blocking-client-0.0.1.jar')
+    //testCompile project(':mobile')
     compile 'com.github.clans:fab:1.6.4'
+    compile 'org.slf4j:slf4j-api:1.7.20'
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '2.6.1'
+    compile group: 'com.google.guava', name: 'guava', version: '20.0'
+    compile group: 'com.squareup.okhttp', name: 'okhttp', version: '2.7.5'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    compile 'com.madgag.spongycastle:core:1.54.0.0'
+    compile group: 'commons-validator', name: 'commons-validator', version: '1.6'
+    compile 'com.lambdaworks:scrypt:1.4.0'
     testCompile 'org.slf4j:slf4j-api:1.7.20'
     testCompile 'org.slf4j:slf4j-simple:1.7.5'
     testCompile 'junit:junit:4.12'
